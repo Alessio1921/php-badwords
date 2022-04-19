@@ -4,13 +4,6 @@ $censuredWord = $_GET['name'] ;
 $textCensured = str_replace($censuredWord, "***", $text);
 ?>
 
-<pre>
-  <?php
-    echo $text."\n";
-    echo(strlen($text)."\n");
-    echo $censuredWord;
-  ?>
-</pre>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +13,13 @@ $textCensured = str_replace($censuredWord, "***", $text);
     <title>Document</title>
   </head>
   <body>
+    <pre>
+      <?php
+        echo $text."\n";
+        echo(strlen($text)."\n");
+        echo $censuredWord;
+      ?>
+    </pre>
     <h1>Censured Phrase</h1>
     <h2>
       <?php
